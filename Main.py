@@ -8,37 +8,51 @@
 cost=float(input("How much does the item cost?"))
 amount=float(input("How much is the payment?"))
 change=amount - cost
-print("your change is",change)
+if change>0:
+    print("Your change is",change)
 owe=change*-1
-print("You owe", owe)
-num100=change//100
-print(num100,100,"x 100$")
-change=change%100
-num50=change//50
-print(num50,50,"x 50$")
-change=change%50
-num20=change//20
-print(num20,20,"x 20$")
-change=change%20
-num10=change//10
-print(num10,10,"x 10$")
-change=change%10
-num5=change//5
-print(num5,5,"x 5$")
-change=change%5
-num2=change//2
-print(num2,2,"x 2$")
-change=change%2
-num1=change//1
-print(num1,1,"x 1$")
-change=change%1
-numquarter=change//0.25
-print(numquarter,0.25,"x quater")
-change=change%0.25
-numdime=change//0.10
-print(numdime,0.10,"x dime")
-change=change%0.10
-numnickel=change//0.05
-print(numnickel,0.05,"x nickel")
-change=change%0.05
+if owe>0:
+    print("You owe", owe)
+else:
+    num100=change//100
+    if num100>0:
+        print(num100,"x 100$")
+    change=change%100
+    num50=change//50
+    if num50>0:
+        print(num50,"x 50$")
+    change=change%50
+    num20=change//20
+    if num20>0:
+        print(num20,"x 20$")
+    change=change%20
+    num10=change//10
+    if num10>0:
+        print(num10,"x 10$")
+    change=change%10
+    num5=change//5
+    if num5>0:
+        print(num5,"x 5$")
+    change=change%5
+    num2=change//2
+    if num2>0:
+        print(num2,"x 2$")
+    change=change%2
+    num1=change//1
+    if num1>0:
+        print(num1,"x 1$")
+    change=change%1
+    numquarter=change//0.25
+    if numquarter>0:
+        print(numquarter,"x quater")
+    change=change%0.25
+    numdime=change//0.10
+    if numdime>0:
+        print(numdime,"x dime")
+    change=change%0.10
+    numnickel=change//0.05
+    if numnickel>0:
+        print(numnickel,"x nickel")
+    change=change%0.05
+
 
